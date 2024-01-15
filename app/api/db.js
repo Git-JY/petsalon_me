@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 
 export default async (str) => {
-    const client = new MongoClient(process.env.YHHOST);
+    const client = new MongoClient(process.env.JYHOST);
     await client.connect();
     const db = client.db("petsalon");
     const collection = db.collection(str);
